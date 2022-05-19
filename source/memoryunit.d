@@ -19,9 +19,7 @@ pragma(inline, true) {
 }
 
 struct MemoryUnit(T) {
-    union {
-        T value;
-    }
+    T value;
     
     alias value this;
 
