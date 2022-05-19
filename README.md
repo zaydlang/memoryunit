@@ -23,3 +23,5 @@ writefln(foo);       // prints out 0x3234
 ```
 
 The cool part is that, when compiling with optimizations on, this library incurs no additional overhead compared to manual bitmanip (via bitwise ands / ors and whatnot).
+
+Feel free to contribute! :)
