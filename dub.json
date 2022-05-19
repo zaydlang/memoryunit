@@ -1,0 +1,10 @@
+{
+	"authors": [
+		"zaydq"
+	],
+	"copyright": "Copyright © 2022, zaydq",
+	"description": "A D library for easy, readable bitmanip",
+	"license": "GPL3",
+	"name": "memoryunit",
+	"targetType": "library"
+}

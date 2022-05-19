@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/memoryunit
+memoryunit.so
+memoryunit.dylib
+memoryunit.dll
+memoryunit.a
+memoryunit.lib
+memoryunit-test-*
+libmemoryunit.a
+*.exe
+*.o
+*.obj
+*.lst
