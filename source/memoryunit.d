@@ -91,8 +91,8 @@ struct MemoryUnit(T) {
         this.value = cast(T) value;
     }
 
-    Byte get_byte(int i) {
-        return Byte(value.bits(i * 8, (i + 1) * 8 - 1));
+    ubyte get_byte(int i) {
+        return cast(ubyte) (value.bits(i * 8, (i + 1) * 8 - 1));
     }
 
     void set_byte(S)(int i, S b) {
