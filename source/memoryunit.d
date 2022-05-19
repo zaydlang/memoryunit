@@ -26,6 +26,10 @@ struct MemoryUnit(T) {
     this(S)(S value) {
         this.value = cast(T) value;
     }
+    
+    this(T value) {
+        this.value = value;
+    }
 
     MemoryUnit!T opUnary(string s)() {
         return mixin(
