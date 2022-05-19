@@ -21,3 +21,5 @@ foo[30] = 0;         // sets bit 30 of foo to 0
 foo[28..29] = 1;     // sets bits 28-29 of foo to 3
 writefln(foo);       // prints out 0x3234
 ```
+
+The cool part is that, when compiling with optimizations on, this library incurs no additional overhead compared to manual bitmanip (via bitwise ands / ors and whatnot).
