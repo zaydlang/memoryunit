@@ -1,3 +1,5 @@
+import core.bitop;
+
 pragma(inline, true) {
     auto create_mask(size_t start, size_t end) {
         return (1 << (end - start + 1)) - 1;
@@ -56,9 +58,9 @@ struct MemoryUnit(T) {
         return cast(T) value;
     }
 
-    MemoryUnit!T rotate_right(size_t shift) {
+    MemoryUnit!T rotate_right(int shift) {
         return MemoryUnit!T(
-            cast(T) ((value >> shift) | (value << (T.sizeof * 8 - shift)))
+            ror(value, shift)
         );
     }
 
